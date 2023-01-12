@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Bhargav Talpada </title>
+	
+	<style>
+		*{
+			margin:0;
+			padding:0;
+			box-sizing:border-box;
+		}
+<!-- Home section -->
+		.hero{
+			height:100vh;
+			width:100%;
+			background-position:center;
+			background-size:cover;
+		}
+		nav{
+			display:flex;
+			
+			justify-content:space-between;
+			padding-top:40px;
+			padding-left:8%;
+			padding-right:8%;
+		}
+		.logo{
+			color:#fff;
+			font-size:40px;
+			letter-spacing:1px;
+			cursor:pointer;
+		}
+		span{
+			color:#f9004d;
+		}
+		nav ul li{
+			list-style-type:none;
+			display:inline-block;
+			padding-right:10px;
+		}
+		li{
+			float:left;
+		}
+		nav ul li a{
+			text-decoration:none;
+			font-weight:bolder;
+			text-transform:capitalize;
+			color:white;
+			text-align:;
+			margin-top:-10px;
+			padding:10px 40px;
+			font-size:20px;
+			letter-spacing:2px;
+			display:block;
+			border:1px solid trasparent;
+			transition:0.6s ease-in;
+		}
+		nav ul li a:hover{
+			color:#f9004d;
+	
+		}
+		nav img{
+			height:auto;
+			width:350px;
+			margin-top:100px;
+			border:2px solid #f9004d;
+			border-radius:30px;
+			
+		}
+		.content{
+			position:absolute;
+			top:60%;
+			left:10%;
+			transform:translatey(-50%);
+		}
+		h2{
+			color:#fff;
+			margin:;
+			font-size:50px;
+		}
+		h3{
+			color:#fcfc;
+			letter-spacing:2px;
+			margin-bottom:50px;
+			font-size:;
+		}
+		h4{
+			color:#fcfc;
+			letter-spacing:2px;
+			font-size:;
+		}
+
+		
+<!-- About section -->
+		
+		.about{
+			width:100px;
+			padding:100px 0px;
+			color:#101010	;
+		}
+		.about img{
+			height:auto;
+			width:350px;
+			margin-top:200px;
+			margin-left:-100px;
+			border:2px solid #f9004d;
+			border-radius:30px;
+			border-radius:30px;
+		}
+		.about-text{
+			width:500px;
+			margin-top:180px;	
+			
+		}
+		.main{
+			width:1000px;
+			max-width:95%;
+			margin:-100px auto;
+			display:flex;
+			align-items:center;
+			justify-content:space-between;
+		}
+		.about-text h2{
+			color:#fff;
+			font-size:70px;
+			text-transform:capitalize;
+			margin-bottom:50px;
+		}
+		.about-text h5{
+			color:#fff;
+			letter-spacing:2px;
+			font-size:20px;
+			
+			text-transform:capitalize;
+		}
+		.about-text p{
+			color:#fcfc;
+			letter-spacing:2px;
+			line-height:30px;
+			font-size:20px;
+			margin-bottom:10px;
+			
+		}
+		button{
+			background-color:#f9004d;
+			color:#fff;
+			text-decoration:none;
+			border:2px solid transparent;
+			font-weight:bold;
+			padding:15px 20px;
+			border-radius:25px;
+			
+			transition:.6s;
+		}
+		button:hover{
+			background-color:transparent;
+			border:2px solid #f9004d;
+			cursor:pointer;
+		}
+	
+<!-- Contact section -->
+
+		.contact-section{
+			width:100px;
+			display:flex;
+			justify-content:center;
+			align-items:center;		
+		}
+		.contact-info{
+			color:#fff;
+			max-width:200px;
+			line-height:10px;
+			padding-left:150px;
+			font-size:10px;
+			margin-top:140px;
+			margin-bottom:-110px;
+		}
+		
+		svg{
+			margin-bottom:25px;
+		}
+		.contact-info h3{
+			color:#fcfc;
+			font-size:30px;
+			margin-bottom:20px;
+		}
+		.contact-info p{
+			color:#fff;
+			font-size:15px;
+		}
+		.form{
+			max-width:700px;
+			margin-top:-350px;
+			margin-left:500px;
+			
+		}
+		.contact-info, .form{
+			flex:1;
+		}
+		.form h2{
+			color:#fff;
+			text-align:;
+			font-size:30px;
+			text-transform:uppercase;
+			margin-bottom:30px;
+			margin-top:40px;
+			margin-left:100px;
+			
+		}
+		.form .text-box{
+			background:#000;
+			color:#fff;
+			border:2px outset;
+			width:200px;
+			height:25px;
+			padding:15px;
+			font-size:15px;
+			border-radius:5px;
+			box-shadow:0 1px 1px rgba(0,0,0,0.1);
+			margin-bottom:20px;
+			
+		}
+		.form .text-box:hover{
+			transition:	2s ease-in-out;
+			height:50px;
+			width:250px;	
+			font-family:Comic Sans MS;
+			border:2px inset #d6249f;
+		}
+		.form .text-box:first-child{
+			margin-right:15px;
+		}
+		.form .text-box:first-child:hover{
+			border: 2px outset #f9004d;
+		}
+		.form .text-box:last-child{
+			margin-right:30px;
+			flex-direction:row;
+			width: 300px;
+		}
+		.form textarea{
+			background:#000;
+			color:#fcfc;
+			border:2px inset;
+			width:400px;
+			padding:12px;
+			font-size:15px;
+			height: 100px;
+			resize:vertical;
+			border-radius:5px;
+			box-shadow:0 1px 1px rgba(0,0,0,0.1);
+			margin-bottom:30px;
+		}
+		.form textarea:hover{
+			transition:	2s ease-in-out;
+			height: 150px;
+			width: 450px;
+			font-family:Comic Sans MS;
+			border:2px inset #285AEB;	
+		}
+		.form .send-btn{
+			float:center;
+			background:#2E94E3;
+			color:#fff;
+			border:none;
+			width:80px;
+			height:30px;
+			font-size:15px;
+			font-weight:600;
+			text-transform:uppercase;
+			letter-spacing:2px;
+			border-radius:2px;
+			cursor:pointer;
+			transition:0.6s ease-in;
+			
+		}
+		.form .send-btn:hover{
+			background-color:#f9004d;
+			border-radius:30px;
+		}
+
+
+
+		footer{
+			position:relative;
+			width:100%;
+			height:200px;
+			display:flex;
+			flex-direction:column;
+			align-items:center;
+			justify-content:center;
+			background:#000;
+			margin-top:65px;
+		}
+		footer p:nth-child(1){
+			font-size:30px;
+			color:#fff;
+			margin-bottom:10px;
+			font-weight:bold;
+		}
+		.social{
+			display:flex;
+		}
+		.social a{
+			width:45px;
+			height:45px;
+			display:flex;
+			align-items:center;
+			justify-content:center;
+			background:;
+			border-radius:50%;
+			margin-left:20px;
+			margin-right:20px;
+			margin-top:15px;
+			color:#fff;
+			text-decoration:none;
+			font-size:20px;
+		}
+		.facebook{
+			color:#fff;
+		}
+		.facebook:hover{
+			
+			color:#3b5998;
+			
+		}
+		.instagram{
+			color:#fff;
+		}
+		.instagram:hover{
+			color:pink;
+			display: inline-block;
+			width: 50px;
+			height: 45px;
+			text-align: center;
+			border-radius: 15px;
+			color: #fff;
+			font-size: 220px;
+			line-height: 250px;
+			vertical-align: middle;
+			background: #d6249f;
+			background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+			box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+		}
+		.social a:hover{
+			transform:scale(1.3);
+			transition:.3s;
+		}
+		.end{
+			position:absolute;
+			color:#fcfc;
+			bottom:10px;
+			font-size:15px;
+		}
+		
+	</style>
+</head>
+<body bgcolor="#000">
+
+<!-- Home section -->
+
+	<div class="hero">
+		<nav>
+			<h2  class="logo"> Portfo<span>lio</span></h2>
+			<!--<ul>
+				<li><a class="active" href="#"> Home </a></li>
+				<li><a href="#"> About </a></li>
+				<li><a href="#"> Contact </a></li>
+			</ul>-->
+			<!--<img src="file:///D:/bhargav/img/3.jpeg"></img>-->
+			<img src="file:///c:/bhargav/3.jpeg">
+		</nav>
+		<div class="content">
+			<h4> Hello, my name is</h4>
+			<h2> Bhargav <span> Talpada </span></h2>
+			<h3> I'am a IT student</h3>
+		
+		</div>
+	</div>
+	
+<!-- About section -->
+
+	<section class="about">
+		<div class="main">
+			<!--<img src="file:///D:/bhargav/img/4.jpg">-->
+			<img src="file:///c:/bhargav/4.jpg"></img>
+			<div class="about-text">
+			<h2> about me </h2>
+			<h5> <span>IT</span> Student </h5>
+			<p> My name is Bhargav Talpada. I am currently studying in geetanjali collage in rajkot. I have Bachelor of Science in Information Technology running now. I am currently in my secound year of BSC.IT. I am currently learning languages like Cshap, Java, ReactJS etc... I know languages like Html, Css, Java script, Php. </p>
+			<button type="button"> Let's Talk </button>
+			</div>
+		</div>
+	</section>
+	
+<!-- Contact section -->
+	
+	<div class="contact-section">
+	
+		
+	<div class="contact-info">
+	<svg class="Add"xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+		</svg>
+			<h3> Address: </h3>
+			<p>Rajkot,Gujarat</p>
+	</div>
+	<div class="contact-info">
+		<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+  <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+  <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+		</svg>
+			<h3> Contact: </h3>
+			<p>1234567890</p> 
+	</div>
+	<div class="contact-info">
+		<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+		</svg>
+			<h3> Email: </h3>
+			<p>contact@gmail.com</p> 
+	</div>
+</div>
+
+
+<div class="form">
+	<h2> contact <span>Us</span> </h2>
+	<form method="post" name="google-sheet">
+		<input type="text" class="text-box" name="Name" placeholder="Enter Your Name" required>
+		<input type="email" class="text-box" name="Email" placeholder="Enter Your Email" required>
+		<input type="phone" class="text-box" name="Phone" placeholder="Enter Your Phone Number" required>
+		<textarea name="Message" placeholder="Enter Your Message" required></textarea>
+		<input type="submit" class="send-btn" name="submit" value="send">
+	</form>
+</div>
+
+
+	<footer>
+		
+		<div class="social">
+			<a href="https://www.facebook.com/profile.php?id=100071882063129"><svg class="facebook"xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+</svg></a>
+			<a  href="https://www.instagram.com/itz._.bhuro_/"><svg class="instagram" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+</svg></a>
+		</div>
+		<p class="end"> CopyRight By Bhargav Talpada </p>
+	</footer>
+
+
+
+
+	<script>
+		const scriptURL = 'https://script.google.com/macros/s/AKfycbz19CZR9QltkCK2gukZ5zqjgYxfyaEPspBlnZoGmzU2WTM0BoEN_Q16ecrQtDKp4Cyk6w/exec'
+		const form = document.forms['google-sheet']
+	  
+		form.addEventListener('submit', e => {
+		  e.preventDefault()
+		  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+			.then(response => alert("Thanks for Contacting us..! We Will Contact You Soon... "))
+			.catch(error => console.error('Error!', error.message))
+		})
+	</script>
+
+</body>
+</html>
